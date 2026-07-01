@@ -83,9 +83,13 @@ public class ManagerCourtController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCourt(@PathVariable Long id) {
+    public ResponseEntity<ResponseDTO<Void>> deleteCourt(@PathVariable Long id) {
         courtService.deleteCourt(id);
-        return ResponseEntity.noContent().build();
+        ResponseDTO<Void> response = ResponseDTO.<Void>builder()
+                .success(true)
+                .message("Court deleted successfully")
+                .build();
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/{courtId}/images")

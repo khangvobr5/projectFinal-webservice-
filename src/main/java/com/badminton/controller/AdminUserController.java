@@ -58,8 +58,12 @@ public class AdminUserController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
+    public ResponseEntity<ResponseDTO<Void>> deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
-        return ResponseEntity.noContent().build();
+        ResponseDTO<Void> response = ResponseDTO.<Void>builder()
+                .success(true)
+                .message("User deleted successfully")
+                .build();
+        return ResponseEntity.ok(response);
     }
 }

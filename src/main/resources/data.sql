@@ -1,9 +1,8 @@
-SET FOREIGN_KEY_CHECKS = 0;
-TRUNCATE TABLE bookings;
-TRUNCATE TABLE courts;
-TRUNCATE TABLE time_slots;
-TRUNCATE TABLE users;
-SET FOREIGN_KEY_CHECKS = 1;
+DELETE FROM bookings;
+DELETE FROM court_images;
+DELETE FROM courts;
+DELETE FROM time_slots;
+DELETE FROM users;
 
 INSERT INTO users (id, username, email, password, role, is_active, created_at) VALUES 
 (1, 'customer1', 'customer1@test.com', '$2a$10$NIx8HUIuobMVLHne/XydgeKnFPqEfMeml0ldsTZzp0tm.LMAcCyu6', 'CUSTOMER', 1, NOW()),

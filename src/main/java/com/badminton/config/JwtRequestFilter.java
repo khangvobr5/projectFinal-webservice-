@@ -5,6 +5,8 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,6 +19,8 @@ import java.io.IOException;
 
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
+
+    private static final Logger log = LoggerFactory.getLogger(JwtRequestFilter.class);
 
     private final UserDetailsService userDetailsService;
     private final JwtUtil jwtUtil;
@@ -48,7 +52,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                 }
                 username = jwtUtil.extractUsername(jwt);
             } catch (Exception e) {
-                
+                log.warn("Failed to extract username from JWT token: {}", e.getMessage());
             }
         }
 

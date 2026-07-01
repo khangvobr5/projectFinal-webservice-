@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.badminton.service.AuthServiceTest" tests="11" skipped="0" failures="4" errors="0" timestamp="2026-07-01T08:37:14" hostname="DESKTOP-OJ69R6V" time="0.23">
+  <properties/>
+  <testcase name="resetPassword_success()" classname="com.badminton.service.AuthServiceTest" time="0.173"/>
+  <testcase name="register_usernameExists()" classname="com.badminton.service.AuthServiceTest" time="0.008">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Username already exists&gt; but was: &lt;Username is already taken&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Username already exists&gt; but was: &lt;Username is already taken&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//com.badminton.service.AuthServiceTest.register_usernameExists(AuthServiceTest.java:97)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="forgotPassword_success()" classname="com.badminton.service.AuthServiceTest" time="0.006"/>
+  <testcase name="login_success()" classname="com.badminton.service.AuthServiceTest" time="0.007"/>
+  <testcase name="refresh_tokenBlacklisted()" classname="com.badminton.service.AuthServiceTest" time="0.006">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;403 FORBIDDEN&gt; but was: &lt;401 UNAUTHORIZED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;403 FORBIDDEN&gt; but was: &lt;401 UNAUTHORIZED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//com.badminton.service.AuthServiceTest.refresh_tokenBlacklisted(AuthServiceTest.java:150)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="register_emailExists()" classname="com.badminton.service.AuthServiceTest" time="0.005">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Email already exists&gt; but was: &lt;Email is already registered&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Email already exists&gt; but was: &lt;Email is already registered&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//com.badminton.service.AuthServiceTest.register_emailExists(AuthServiceTest.java:86)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="changePassword_wrongOldPassword()" classname="com.badminton.service.AuthServiceTest" time="0.004">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Old password is incorrect&gt; but was: &lt;Incorrect old password&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Old password is incorrect&gt; but was: &lt;Incorrect old password&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//com.badminton.service.AuthServiceTest.changePassword_wrongOldPassword(AuthServiceTest.java:179)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="register_success()" classname="com.badminton.service.AuthServiceTest" time="0.004"/>
+  <testcase name="resetPassword_expiredToken()" classname="com.badminton.service.AuthServiceTest" time="0.004"/>
+  <testcase name="changePassword_success()" classname="com.badminton.service.AuthServiceTest" time="0.003"/>
+  <testcase name="refresh_success()" classname="com.badminton.service.AuthServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
