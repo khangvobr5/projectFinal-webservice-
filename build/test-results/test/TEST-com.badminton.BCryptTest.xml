@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.badminton.BCryptTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-01T02:38:05.339Z" hostname="LAPTOP-9DQS3FLB" time="0.313">
+  <properties/>
+  <testcase name="testPasswords()" classname="com.badminton.BCryptTest" time="0.3"/>
+  <system-out><![CDATA[Matches Admin@123: true
+Matches Admin@1236: false
+Matches Manager@123: true
+Matches Customer@123: true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

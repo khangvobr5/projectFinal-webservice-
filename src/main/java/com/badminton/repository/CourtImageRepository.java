@@ -1,0 +1,12 @@
+package com.badminton.repository;
+
+import com.badminton.entity.CourtImage;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface CourtImageRepository extends JpaRepository<CourtImage, Long> {
+    List<CourtImage> findByCourtId(Long courtId);
+}
