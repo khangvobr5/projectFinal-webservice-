@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.badminton.service.CloudinaryServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-07-01T09:03:20" hostname="DESKTOP-OJ69R6V" time="0.139">
+  <properties/>
+  <testcase name="uploadFile_nullUploadResult()" classname="com.badminton.service.CloudinaryServiceTest" time="0.105"/>
+  <testcase name="uploadFile_invalidContentType()" classname="com.badminton.service.CloudinaryServiceTest" time="0.002"/>
+  <testcase name="uploadFile_fileSizeExceedsLimit()" classname="com.badminton.service.CloudinaryServiceTest" time="0.008"/>
+  <testcase name="uploadFile_cloudinaryFailure()" classname="com.badminton.service.CloudinaryServiceTest" time="0.004"/>
+  <testcase name="uploadFile_success_jpeg()" classname="com.badminton.service.CloudinaryServiceTest" time="0.008"/>
+  <testcase name="uploadFile_success_webp()" classname="com.badminton.service.CloudinaryServiceTest" time="0.001"/>
+  <testcase name="uploadFile_nullContentType()" classname="com.badminton.service.CloudinaryServiceTest" time="0.003"/>
+  <testcase name="uploadFile_success_png()" classname="com.badminton.service.CloudinaryServiceTest" time="0.002"/>
+  <testcase name="uploadFile_nullSecureUrl()" classname="com.badminton.service.CloudinaryServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

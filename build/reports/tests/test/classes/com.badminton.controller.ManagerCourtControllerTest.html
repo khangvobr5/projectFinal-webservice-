@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ManagerCourtControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ManagerCourtControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.badminton.controller.html">com.badminton.controller</a> &gt; ManagerCourtControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.069s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createCourt_success()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteCourtImage_success()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteCourt_success()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllCourts_success()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getCourtById_success()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getCourtImages_success()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateCourt_success()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">uploadCourtImage_courtNotFound()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">uploadCourtImage_success()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2026-07-01T16:03:20.181+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.badminton.controller.ManagerCourtControllerTest]: ManagerCourtControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-01T16:03:20.183+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.badminton.BadmintonBookingApplication for test class com.badminton.controller.ManagerCourtControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-07-01T16:03:20.196+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.c.ManagerCourtControllerTest         : Starting ManagerCourtControllerTest using Java 17.0.12 with PID 22696 (started by PREDATOR in D:\rikkie\Java Web Service\Project_JavaWebService_badminton-management-service)
+2026-07-01T16:03:20.196+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.c.ManagerCourtControllerTest         : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-07-01T16:03:20.495+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24f9a670, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4813b3d1, org.springframework.security.web.context.SecurityContextHolderFilter@780e214b, org.springframework.security.web.header.HeaderWriterFilter@5f3030da, org.springframework.security.web.authentication.logout.LogoutFilter@36fb4fb9, com.badminton.config.JwtRequestFilter@70dbbbb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14673fc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a0f6b74, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cc42eef, org.springframework.security.web.session.SessionManagementFilter@7510139b, org.springframework.security.web.access.ExceptionTranslationFilter@43a5e40c, org.springframework.security.web.access.intercept.AuthorizationFilter@2aaa635d]
+2026-07-01T16:03:20.518+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-01T16:03:20.518+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-01T16:03:20.518+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-07-01T16:03:20.523+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.c.ManagerCourtControllerTest         : Started ManagerCourtControllerTest in 0.337 seconds (process running for 11.429)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Jul 1, 2026, 4:03:21 PM</p>
+</div>
+</div>
+</body>
+</html>

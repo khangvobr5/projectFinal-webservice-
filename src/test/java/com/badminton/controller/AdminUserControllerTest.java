@@ -77,6 +77,8 @@ public class AdminUserControllerTest {
         Mockito.doNothing().when(userService).deleteUser(1L);
 
         mockMvc.perform(delete("/api/v1/admin/users/1"))
-                .andExpect(status().isNoContent());
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success").value(true))
+                .andExpect(jsonPath("$.message").value("User deleted successfully"));
     }
 }

@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.365s</div>
+<div class="counter">0.240s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">75%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,35 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="testDeleteUser()"></a>
-<h3 class="failures">testDeleteUser()</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Status expected:&lt;204&gt; but was:&lt;200&gt;
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
-	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
-	at com.badminton.controller.AdminUserControllerTest.testDeleteUser(AdminUserControllerTest.java:80)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -100,32 +78,32 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">testDeleteUser()</td>
-<td class="failures">0.013s</td>
-<td class="failures">failed</td>
+<td class="success">testDeleteUser()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetUserById()</td>
-<td class="success">0.005s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetUsers()</td>
-<td class="success">0.259s</td>
+<td class="success">0.171s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdateUser()</td>
-<td class="success">0.088s</td>
+<td class="success">0.059s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2026-07-01T15:37:10.746+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.badminton.controller.AdminUserControllerTest]: AdminUserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-07-01T15:37:10.757+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.badminton.BadmintonBookingApplication for test class com.badminton.controller.AdminUserControllerTest
+<pre>2026-07-01T16:03:18.007+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.badminton.controller.AdminUserControllerTest]: AdminUserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-01T16:03:18.039+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.badminton.BadmintonBookingApplication for test class com.badminton.controller.AdminUserControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -135,72 +113,35 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.5)
 
-2026-07-01T15:37:10.773+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] c.b.controller.AdminUserControllerTest   : Starting AdminUserControllerTest using Java 17.0.12 with PID 24180 (started by PREDATOR in D:\rikkie\Java Web Service\Project_JavaWebService_badminton-management-service)
-2026-07-01T15:37:10.773+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] c.b.controller.AdminUserControllerTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-07-01T15:37:10.901+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-07-01T15:37:10.901+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-07-01T15:37:10.913+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 6 JPA repository interfaces.
-2026-07-01T15:37:10.915+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-07-01T15:37:10.915+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-07-01T15:37:10.918+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.BookingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-07-01T15:37:10.918+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.CourtImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-07-01T15:37:10.919+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.CourtRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-07-01T15:37:10.919+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.TimeSlotRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-07-01T15:37:10.919+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.TokenBlacklistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-07-01T15:37:10.919+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-07-01T15:37:10.919+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2026-07-01T15:37:11.268+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-07-01T15:37:11.273+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-07-01T15:37:11.280+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-07-01T15:37:11.282+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2026-07-01T15:37:11.286+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3746135b
-2026-07-01T15:37:11.288+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2026-07-01T15:37:11.291+07:00  WARN 24180 --- [badminton-booking-api] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-07-01T15:37:11.422+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-07-01T15:37:11.456+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-07-01T15:37:12.234+07:00  WARN 24180 --- [badminton-booking-api] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-07-01T15:37:12.566+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62ee7e50, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b939971, org.springframework.security.web.context.SecurityContextHolderFilter@4d47f547, org.springframework.security.web.header.HeaderWriterFilter@3f8c695d, org.springframework.security.web.authentication.logout.LogoutFilter@e2cf713, com.badminton.config.JwtRequestFilter@5ae3f8e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79a8b897, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2532e07e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5debb4c0, org.springframework.security.web.session.SessionManagementFilter@12b96c33, org.springframework.security.web.access.ExceptionTranslationFilter@156437f7, org.springframework.security.web.access.intercept.AuthorizationFilter@ffad70]
-2026-07-01T15:37:13.113+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-07-01T15:37:13.114+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-07-01T15:37:13.116+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2026-07-01T15:37:13.129+07:00  INFO 24180 --- [badminton-booking-api] [    Test worker] c.b.controller.AdminUserControllerTest   : Started AdminUserControllerTest in 2.368 seconds (process running for 8.372)
-
-MockHttpServletRequest:
-      HTTP Method = DELETE
-      Request URI = /api/v1/admin/users/1
-       Parameters = {}
-          Headers = []
-             Body = null
-    Session Attrs = {}
-
-Handler:
-             Type = com.badminton.controller.AdminUserController
-           Method = com.badminton.controller.AdminUserController#deleteUser(Long)
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = null
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 200
-    Error message = null
-          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
-     Content type = application/json
-             Body = {&quot;success&quot;:true,&quot;message&quot;:&quot;User deleted successfully&quot;,&quot;data&quot;:null}
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+2026-07-01T16:03:18.058+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.controller.AdminUserControllerTest   : Starting AdminUserControllerTest using Java 17.0.12 with PID 22696 (started by PREDATOR in D:\rikkie\Java Web Service\Project_JavaWebService_badminton-management-service)
+2026-07-01T16:03:18.059+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.controller.AdminUserControllerTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-07-01T16:03:18.217+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-01T16:03:18.217+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-01T16:03:18.228+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 6 JPA repository interfaces.
+2026-07-01T16:03:18.231+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-01T16:03:18.232+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-07-01T16:03:18.234+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.BookingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-01T16:03:18.235+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.CourtImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-01T16:03:18.235+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.CourtRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-01T16:03:18.235+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.TimeSlotRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-01T16:03:18.235+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.TokenBlacklistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-01T16:03:18.235+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.badminton.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-01T16:03:18.235+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-07-01T16:03:18.387+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-01T16:03:18.389+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-01T16:03:18.392+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-01T16:03:18.393+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-07-01T16:03:18.397+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17eac1b5
+2026-07-01T16:03:18.397+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-07-01T16:03:18.398+07:00  WARN 22696 --- [badminton-booking-api] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-01T16:03:18.506+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-01T16:03:18.537+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-01T16:03:18.762+07:00  WARN 22696 --- [badminton-booking-api] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-01T16:03:18.960+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@231a475f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@98e2a07, org.springframework.security.web.context.SecurityContextHolderFilter@1b6c7e3c, org.springframework.security.web.header.HeaderWriterFilter@19315d74, org.springframework.security.web.authentication.logout.LogoutFilter@385376c, com.badminton.config.JwtRequestFilter@19f31c85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@778067f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64c94e8c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cfcab77, org.springframework.security.web.session.SessionManagementFilter@774d1f78, org.springframework.security.web.access.ExceptionTranslationFilter@47d57aae, org.springframework.security.web.access.intercept.AuthorizationFilter@595dda6d]
+2026-07-01T16:03:19.216+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-01T16:03:19.217+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-01T16:03:19.217+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-07-01T16:03:19.225+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.controller.AdminUserControllerTest   : Started AdminUserControllerTest in 1.183 seconds (process running for 10.132)
 </pre>
 </span>
 </div>
@@ -212,7 +153,7 @@ MockHttpServletResponse:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at Jul 1, 2026, 3:37:14 PM</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at Jul 1, 2026, 4:03:21 PM</p>
 </div>
 </div>
 </body>

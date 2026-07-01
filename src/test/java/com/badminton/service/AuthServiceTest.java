@@ -83,7 +83,7 @@ class AuthServiceTest {
 
         CustomException exception = assertThrows(CustomException.class, () -> authService.register(request));
         assertEquals(HttpStatus.CONFLICT, exception.getStatus());
-        assertEquals("Email already exists", exception.getMessage());
+        assertEquals("Email is already registered", exception.getMessage());
     }
 
     @Test
@@ -94,7 +94,7 @@ class AuthServiceTest {
 
         CustomException exception = assertThrows(CustomException.class, () -> authService.register(request));
         assertEquals(HttpStatus.CONFLICT, exception.getStatus());
-        assertEquals("Username already exists", exception.getMessage());
+        assertEquals("Username is already taken", exception.getMessage());
     }
 
     @Test
@@ -147,8 +147,8 @@ class AuthServiceTest {
         when(redisTokenBlacklistService.isBlacklisted("blacklistedToken")).thenReturn(true);
 
         CustomException exception = assertThrows(CustomException.class, () -> authService.refresh(request));
-        assertEquals(HttpStatus.FORBIDDEN, exception.getStatus());
-        assertEquals("Refresh token is blacklisted", exception.getMessage());
+        assertEquals(HttpStatus.UNAUTHORIZED, exception.getStatus());
+        assertEquals("Invalid refresh token", exception.getMessage());
     }
 
     @Test
@@ -176,7 +176,7 @@ class AuthServiceTest {
 
         CustomException exception = assertThrows(CustomException.class, () -> authService.changePassword("test@test.com", request));
         assertEquals(HttpStatus.BAD_REQUEST, exception.getStatus());
-        assertEquals("Old password is incorrect", exception.getMessage());
+        assertEquals("Incorrect old password", exception.getMessage());
     }
 
     @Test

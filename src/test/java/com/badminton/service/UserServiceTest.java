@@ -167,7 +167,7 @@ class UserServiceTest {
 
         CustomException exception = assertThrows(CustomException.class, () -> userService.updateUser(1L, userDTO));
         assertEquals(HttpStatus.CONFLICT, exception.getStatus());
-        assertEquals("Username already exists", exception.getMessage());
+        assertEquals("Username is already taken", exception.getMessage());
     }
 
     @Test
@@ -190,7 +190,7 @@ class UserServiceTest {
 
         CustomException exception = assertThrows(CustomException.class, () -> userService.updateUser(1L, userDTO));
         assertEquals(HttpStatus.CONFLICT, exception.getStatus());
-        assertEquals("Email already exists", exception.getMessage());
+        assertEquals("Email is already registered", exception.getMessage());
     }
 
     @Test

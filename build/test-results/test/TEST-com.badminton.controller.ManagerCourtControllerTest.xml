@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.badminton.controller.ManagerCourtControllerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-07-01T09:03:20" hostname="DESKTOP-OJ69R6V" time="0.076">
+  <properties/>
+  <testcase name="deleteCourt_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.006"/>
+  <testcase name="updateCourt_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.019"/>
+  <testcase name="getAllCourts_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.004"/>
+  <testcase name="deleteCourtImage_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.006"/>
+  <testcase name="getCourtImages_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.006"/>
+  <testcase name="createCourt_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.003"/>
+  <testcase name="getCourtById_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.004"/>
+  <testcase name="uploadCourtImage_courtNotFound()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.018"/>
+  <testcase name="uploadCourtImage_success()" classname="com.badminton.controller.ManagerCourtControllerTest" time="0.003"/>
+  <system-out><![CDATA[2026-07-01T16:03:20.181+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.badminton.controller.ManagerCourtControllerTest]: ManagerCourtControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-01T16:03:20.183+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.badminton.BadmintonBookingApplication for test class com.badminton.controller.ManagerCourtControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-07-01T16:03:20.196+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.c.ManagerCourtControllerTest         : Starting ManagerCourtControllerTest using Java 17.0.12 with PID 22696 (started by PREDATOR in D:\rikkie\Java Web Service\Project_JavaWebService_badminton-management-service)
+2026-07-01T16:03:20.196+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.c.ManagerCourtControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2026-07-01T16:03:20.495+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24f9a670, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4813b3d1, org.springframework.security.web.context.SecurityContextHolderFilter@780e214b, org.springframework.security.web.header.HeaderWriterFilter@5f3030da, org.springframework.security.web.authentication.logout.LogoutFilter@36fb4fb9, com.badminton.config.JwtRequestFilter@70dbbbb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14673fc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a0f6b74, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cc42eef, org.springframework.security.web.session.SessionManagementFilter@7510139b, org.springframework.security.web.access.ExceptionTranslationFilter@43a5e40c, org.springframework.security.web.access.intercept.AuthorizationFilter@2aaa635d]
+2026-07-01T16:03:20.518+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-01T16:03:20.518+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-01T16:03:20.518+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-07-01T16:03:20.523+07:00  INFO 22696 --- [badminton-booking-api] [    Test worker] c.b.c.ManagerCourtControllerTest         : Started ManagerCourtControllerTest in 0.337 seconds (process running for 11.429)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

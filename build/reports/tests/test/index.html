@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">45</div>
+<div class="counter">67</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">7</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.364s</div>
+<div class="counter">2.114s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">84%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,49 +58,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Packages</a>
 </li>
 <li>
-<a href="#tab1">Packages</a>
-</li>
-<li>
-<a href="#tab2">Classes</a>
+<a href="#tab1">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<ul class="linkList">
-<li>
-<a href="classes/com.badminton.controller.AdminUserControllerTest.html">AdminUserControllerTest</a>.
-<a href="classes/com.badminton.controller.AdminUserControllerTest.html#testDeleteUser()">testDeleteUser()</a>
-</li>
-<li>
-<a href="classes/com.badminton.service.AuthServiceTest.html">AuthServiceTest</a>.
-<a href="classes/com.badminton.service.AuthServiceTest.html#changePassword_wrongOldPassword()">changePassword_wrongOldPassword()</a>
-</li>
-<li>
-<a href="classes/com.badminton.service.AuthServiceTest.html">AuthServiceTest</a>.
-<a href="classes/com.badminton.service.AuthServiceTest.html#refresh_tokenBlacklisted()">refresh_tokenBlacklisted()</a>
-</li>
-<li>
-<a href="classes/com.badminton.service.AuthServiceTest.html">AuthServiceTest</a>.
-<a href="classes/com.badminton.service.AuthServiceTest.html#register_emailExists()">register_emailExists()</a>
-</li>
-<li>
-<a href="classes/com.badminton.service.AuthServiceTest.html">AuthServiceTest</a>.
-<a href="classes/com.badminton.service.AuthServiceTest.html#register_usernameExists()">register_usernameExists()</a>
-</li>
-<li>
-<a href="classes/com.badminton.service.UserServiceTest.html">UserServiceTest</a>.
-<a href="classes/com.badminton.service.UserServiceTest.html#updateUser_emailExists()">updateUser_emailExists()</a>
-</li>
-<li>
-<a href="classes/com.badminton.service.UserServiceTest.html">UserServiceTest</a>.
-<a href="classes/com.badminton.service.UserServiceTest.html#updateUser_usernameExists()">updateUser_usernameExists()</a>
-</li>
-</ul>
-</div>
-<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -121,33 +85,33 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.445s</td>
+<td>0.025s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures">
+<td class="success">
 <a href="packages/com.badminton.controller.html">com.badminton.controller</a>
 </td>
-<td>9</td>
-<td>1</td>
+<td>22</td>
 <td>0</td>
-<td>0.474s</td>
-<td class="failures">88%</td>
+<td>0</td>
+<td>0.439s</td>
+<td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures">
+<td class="success">
 <a href="packages/com.badminton.service.html">com.badminton.service</a>
 </td>
-<td>35</td>
-<td>6</td>
+<td>44</td>
 <td>0</td>
-<td>0.445s</td>
-<td class="failures">82%</td>
+<td>0</td>
+<td>1.650s</td>
+<td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -168,18 +132,18 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.445s</td>
+<td>0.025s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures">
+<td class="success">
 <a href="classes/com.badminton.controller.AdminUserControllerTest.html">com.badminton.controller.AdminUserControllerTest</a>
 </td>
 <td>4</td>
-<td>1</td>
 <td>0</td>
-<td>0.365s</td>
-<td class="failures">75%</td>
+<td>0</td>
+<td>0.240s</td>
+<td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
@@ -188,7 +152,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.058s</td>
+<td>0.060s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -198,18 +162,38 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.051s</td>
+<td>0.055s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures">
+<td class="success">
+<a href="classes/com.badminton.controller.ManagerBookingControllerTest.html">com.badminton.controller.ManagerBookingControllerTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.015s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.badminton.controller.ManagerCourtControllerTest.html">com.badminton.controller.ManagerCourtControllerTest</a>
+</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0.069s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
 <a href="classes/com.badminton.service.AuthServiceTest.html">com.badminton.service.AuthServiceTest</a>
 </td>
 <td>11</td>
-<td>4</td>
 <td>0</td>
-<td>0.223s</td>
-<td class="failures">63%</td>
+<td>0</td>
+<td>1.316s</td>
+<td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
@@ -218,7 +202,17 @@
 <td>5</td>
 <td>0</td>
 <td>0</td>
-<td>0.192s</td>
+<td>0.175s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.badminton.service.CloudinaryServiceTest.html">com.badminton.service.CloudinaryServiceTest</a>
+</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0.134s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -228,18 +222,18 @@
 <td>10</td>
 <td>0</td>
 <td>0</td>
-<td>0.019s</td>
+<td>0.013s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures">
+<td class="success">
 <a href="classes/com.badminton.service.UserServiceTest.html">com.badminton.service.UserServiceTest</a>
 </td>
 <td>9</td>
-<td>2</td>
 <td>0</td>
-<td>0.011s</td>
-<td class="failures">77%</td>
+<td>0</td>
+<td>0.012s</td>
+<td class="success">100%</td>
 </tr>
 </tbody>
 </table>
@@ -252,7 +246,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at Jul 1, 2026, 3:37:14 PM</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at Jul 1, 2026, 4:03:21 PM</p>
 </div>
 </div>
 </body>
